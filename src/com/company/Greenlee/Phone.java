@@ -1,16 +1,16 @@
 package com.company.Greenlee;
 
-public class Main {
-    // Trenton Greenlee
-    // 3/9/2020
-    // Exercise 9
-    // CSCI 1660 - Android Programming Fundamentals (Java)
-    public static void main(String[] args) {
-        Email email = new Email("Naruto", "nuzumaki@gmail.com");
-        Phone phone = new Phone("Naruto", "614-342-6544");
+public class Phone extends Contacts {
+    private String number;
 
-        email.contact();
-        System.out.println("----------------------------------");
-        phone.contact();
+    public Phone(String name, String number) {
+        super(name);
+        this.number = number;
+    }
+
+    @Override
+    public void contact() {
+        System.out.println("Name: " + getName());
+        System.out.println("Calling " + number);
     }
 }
