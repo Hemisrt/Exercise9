@@ -10,6 +10,7 @@ public class Main {
         Phone phone = new Phone("Naruto", "614-342-6544");
 
         email.contact();
+        System.out.println("----------------------------------");
         phone.contact();
     }
 }
