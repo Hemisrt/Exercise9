@@ -10,6 +10,7 @@ public class Email extends Contacts {
 
     @Override
     public void contact() {
+        System.out.println("Name: " + getName());
         System.out.println("Emailing " + email);
     }
 }
